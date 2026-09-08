@@ -2,8 +2,6 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="naver-site-verification" content="c447d4eebfee23bfe5fdb99eaf5330668cd976f7" />
-  <meta name="google-site-verification" content="6goHUe_QxoFDhvxMZqiRAoxlp8x_RuejUduk16yp01g" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="MOA — AI를 위한 데이터를 모읍니다. 데이터 수집, 가공, 라벨링 및 AI 데이터셋 구축.">
   <title>MOA | DATA FOR AI</title>
@@ -236,10 +234,7 @@
       return;
     }
 
-    if (
-      !GOOGLE_SCRIPT_URL ||
-      GOOGLE_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbze4DUJvFgrV3arh1VLYkF6w9uQIUATTRvbK6W-X3xrt7L-eSU3pl0pP5v9_huYeaUv/exec')
-    ) {
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE')) {
       showToast('관리자가 신청 폼 연동을 완료하지 않았습니다.');
       return;
     }
