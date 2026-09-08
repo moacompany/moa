@@ -218,7 +218,7 @@
 
   // Google Apps Script 배포 후 발급받은 웹 앱 URL을 아래에 붙여넣으세요.
   // 예: https://script.google.com/macros/s/AKfycbxxxxxxxxxxxxxxxx/exec
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxuhWBleTW7jDQJy2i_qSlk01o90i1s1Vw8ZV1bdkjiN0JKSeZryd4WHi3KnjZS8hjV/exec';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbze4DUJvFgrV3arh1VLYkF6w9uQIUATTRvbK6W-X3xrt7L-eSU3pl0pP5v9_huYeaUv/exec';
 
   function showToast(message) {
     toast.textContent = message;
@@ -236,7 +236,7 @@
 
     if (
       !GOOGLE_SCRIPT_URL ||
-      GOOGLE_SCRIPT_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE')
+      GOOGLE_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbze4DUJvFgrV3arh1VLYkF6w9uQIUATTRvbK6W-X3xrt7L-eSU3pl0pP5v9_huYeaUv/exec')
     ) {
       showToast('관리자가 신청 폼 연동을 완료하지 않았습니다.');
       return;
